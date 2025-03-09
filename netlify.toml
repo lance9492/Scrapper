@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_PUBLIC_SUPABASE_URL = "https://ruwamuiacthfubitkmva.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ1d2FtdWlhY3RoZnViaXRrbXZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE0Njg4ODAsImV4cCI6MjA1NzA0NDg4MH0.uprmazMZOEEfwnC0Q5uN_vV1hTVLJaqJXn7h43ZS_AE"
+  NODE_VERSION = "18.17.0"
+  NEXT_PUBLIC_BASE_URL = "https://scrapper.co.za"
+  NEXT_PUBLIC_API_URL = "https://scrapper.co.za/api"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
